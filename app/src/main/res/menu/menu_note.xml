@@ -3,8 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.ayomide.notekeeper.NoteActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_cancel"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/cancel"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_next"
+        android:orderInCategory="100"
+        android:title="Next"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_send_mail"
+        android:orderInCategory="100"
+        android:title="@string/sendAsEmail"
         app:showAsAction="never" />
 </menu>

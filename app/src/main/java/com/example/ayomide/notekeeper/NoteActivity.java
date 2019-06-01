@@ -19,6 +19,7 @@ public class NoteActivity extends AppCompatActivity {
     Spinner spinnerCourses;
     List<CourseInfo> courses;
     ArrayAdapter<CourseInfo> adapterCourses;
+    private boolean mIsCancelling;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +52,12 @@ public class NoteActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_send_mail){
+            //...
+        } else if (id == R.id.action_next){
+            //...
+        } else if (id == R.id.action_cancel) {
+            //...
         }
 
         return super.onOptionsItemSelected( item );
